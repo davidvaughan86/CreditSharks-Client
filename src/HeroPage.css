@@ -1,0 +1,17 @@
+.heroPageContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10%
+    
+}
+
+.frame {
+    box-sizing: border-box;
+    width: 340px;
+    height: 681px;
+    overflow: hidden;
+    background-color: #d4cece;
+    opacity: 0.68;
+    border-radius: 94px;
+    border: 6px solid #54a6c0;
+  }
