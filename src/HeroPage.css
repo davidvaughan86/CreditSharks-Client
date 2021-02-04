@@ -1,7 +1,7 @@
 .heroPageContainer {
     display: flex;
     flex-direction: column;
-    padding: 10%
+    padding: 5%
     
 }
 
@@ -10,8 +10,66 @@
     width: 340px;
     height: 681px;
     overflow: hidden;
-    background-color: #d4cece;
-    opacity: 0.68;
+    background-color: #f2f3f4;
+    display: inline-flex;
+    flex-direction: column;
     border-radius: 94px;
-    border: 6px solid #54a6c0;
+    border: 10px solid #faebd7;
+    box-shadow: 1px, 1px, 1px, 1px;
+    
+  }
+  .frameVideo {
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background-color: #d4cece;
+   
+    border-radius: 167px;
+    border: 6px solid #faebd7;
+    margin-top: 35px;
+    margin-left: 10px;
+    
+    
+  }
+  
+  .freedom {
+    border-radius: 4px;
+    background: linear-gradient(to right, #b2c3ca, #4ca2cb, #b7c8cf) !important;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 18px;
+    width: 255px;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin: 5px;
+    padding-left: 12;
+    margin-left: 5%;
+    display: flex; 
+    
+    
+  }
+  .freedom span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+  }
+  .freedom span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .freedom:hover span {
+    padding-right: 25px;
+  }
+  .freedom:hover span:after {
+    opacity: 1;
+    right: 0;
   }

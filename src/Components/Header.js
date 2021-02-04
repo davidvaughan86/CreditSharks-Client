@@ -24,15 +24,22 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" 
+      style={{
+            backgroundColor: 'rgb(220,220,220)', 
+            color: 'black',
+            boxShadow: '0px 0px 0px 0px'
+            }}
+      
+      >
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            News
+            
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inheritred">Login</Button>
         </Toolbar>
       </AppBar>
     </div>
