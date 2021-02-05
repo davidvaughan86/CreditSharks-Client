@@ -10,7 +10,7 @@ export default function HeroPage () {
             <div className="frame">
                 <div className="logo" max-with ='60%'>
                     <img src = {logo} width='108%' />
-                    <Link to={'/'} style={{ textDecoration: 'none' }}>
+                    <Link to={'/leadcapture'} style={{ textDecoration: 'none' }}>
                         <span class="freedom" 
                                 align="center" 
                             >
@@ -27,12 +27,12 @@ export default function HeroPage () {
                         url = 'https://www.youtube.com/watch?v=54ynZ6p8nR4&feature=youtu.be' 
                         className="react-player"
                         play={"true"}
-                        width="100%"
+                        width="102%"
                         height="100%"
                         controls={false}
                         mute={true}
                         >
-                            Credit Repair
+                        
                 </ReactPlayer>
                 </div>
 

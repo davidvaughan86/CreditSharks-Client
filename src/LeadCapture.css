@@ -1,0 +1,31 @@
+.leadPageContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 4.5%
+
+
+}
+.leadFrame {
+    box-sizing: border-box;
+    width: 340px;
+    height: 681px;
+    overflow: hidden;
+    background-color: #f2f3f4;
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 94px;
+    border: 10px solid #F8F8FF;
+    box-shadow: 10px 10px 10px black;
+    
+    display: flex;
+    
+    align-items: center;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30%;
+    
+    
+}

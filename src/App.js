@@ -13,6 +13,8 @@ import './HeroPage.css'
 import HeroPage from './Components/HeroPage';
 import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
 import ThreeDRotation from '@material-ui/icons/ThreeDRotation';
+import LeadCapture from './Components/LeadCapture';
+import './LeadCapture.css'
 
 
 function App() {
@@ -25,6 +27,9 @@ function App() {
             <Route path ='/' exact>
               <HeroPage />                
                   
+            </Route>
+            <Route path = '/leadcapture'>
+            <LeadCapture />
             </Route>
             
 

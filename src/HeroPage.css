@@ -1,35 +1,35 @@
 .heroPageContainer {
     display: flex;
     flex-direction: column;
-    padding: 5%
-    
+    padding: 4.5%;
 }
 
 .frame {
     box-sizing: border-box;
     width: 340px;
-    height: 681px;
+    height: 710px;
     overflow: hidden;
-    background-color: #f2f3f4;
+    /* background-color: #f2f3f4; */
+    background-color: rgba(255, 255, 255, 0.5);
     display: inline-flex;
     flex-direction: column;
     border-radius: 94px;
-    border: 10px solid #faebd7;
-    box-shadow: 1px, 1px, 1px, 1px;
+    border: 10px solid #F8F8FF;
+    box-shadow: 10px 10px 10px black;
     
   }
   .frameVideo {
     box-sizing: border-box;
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
     overflow: hidden;
     background-color: #d4cece;
    
     border-radius: 167px;
-    border: 6px solid #faebd7;
-    margin-top: 35px;
-    margin-left: 10px;
-    
+    border: 13px solid #9F0000;
+    margin-top: 30px;
+    margin-left: 25px;
+    box-shadow: 5px 5px 5px black
     
   }
   
