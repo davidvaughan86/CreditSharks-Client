@@ -7,3 +7,44 @@
     align-items: center;
 }
 
+.arrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+  }
+  
+  .arrows svg {
+    opacity: 80%;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    color: #9F0000;
+    filter: drop-shadow(10px 10px 4px black);
+  }
+
+  @media only screen
+ 
+and (min-device-width: 375px)
+ 
+and (max-device-width: 667px)
+ 
+and (-webkit-min-device-pixel-ratio: 2)
+ 
+and (orientation: portrait) {
+ 
+}
+ 
+
+ 
+@media only screen
+ 
+and (min-device-width: 375px)
+ 
+and (max-device-width: 667px)
+ 
+and (-webkit-min-device-pixel-ratio: 2)
+ 
+and (orientation: landscape) {
+ 
+}

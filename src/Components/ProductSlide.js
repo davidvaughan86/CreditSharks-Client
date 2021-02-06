@@ -1,9 +1,9 @@
 import React from 'react'
 import {Card, makeStyles } from '@material-ui/core'
-
+import './Component CSS/ProductSlide.css'
 
 export default function ProductSlide(props) {
-    const {backgroundColor, title} = props.content
+    const { backgroundColor, url } = props.content
 
     const useStyles = makeStyles(() => ({
         card: {
@@ -30,7 +30,7 @@ export default function ProductSlide(props) {
     return (
         
         <Card className={classes.card}>
-            <h1>{title}</h1>
+            <h1>{url}</h1>
         </Card>
         
     )
