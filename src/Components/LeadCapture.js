@@ -1,10 +1,16 @@
 import React from 'react'
 import {Input} from '@material-ui/core'
 import Button from '@material-ui/core/Button'
+import {Link} from 'react-router-dom'
+import {MenuItem} from '@material-ui/core'
+import {useHistory} from 'react-router-dom'   
+import logo from './CSlogo.png'    
 
 
 
 export default function LeadCapture() {
+    const history = useHistory()
+   
     return (
         
         <div className='leadPageContainer' max-width = '80%'>
@@ -126,9 +132,18 @@ export default function LeadCapture() {
                     <br/>
                     <br/>
 
-                    <Button variant="contained" style={{backgroundColor: '#9F0000', color: '#ffffff'}}>
-                        Submit
-                    </Button>
+                    <Link to={'/products'} variant="contained" style={{backgroundColor: 'transparent', color: '#9F0000'}}>
+                       {/* <MenuItem style={{padding:'20px', border:'2px solid', borderRadius:'60px'}}>
+                       
+                           Submit
+                        </MenuItem>  */}
+                        <div className='submit' max-width ='100%'>
+                            <img src ={logo} width='200px' onClick={(e) => {
+                            history.push('/products')
+                            }}/>
+                            
+                        </div>
+                    </Link>
                                 
 
 

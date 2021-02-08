@@ -77,7 +77,7 @@ function App() {
             </Route>
 
             <Route path = '/leadcapture'>
-            <LeadCapture />
+            <LeadCapture onClick />
             </Route>
 
             <Route path = '/products' >

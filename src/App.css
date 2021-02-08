@@ -1,7 +1,31 @@
+.frame {
+  box-sizing: border-box;
+  width: 340px;
+  height: 710px;
+  overflow: hidden;
+  /* background-color: #f2f3f4; */
+  background-color: rgb(226, 226, 226);
+  display: inline-flex;
+  flex-direction: column;
+  border-radius: 94px;
+  border: 10px solid #ffffff;
+  box-shadow: 10px 10px 10px black;
+  
+}
+
+.submit img {
+  margin-left: 2%;
+  
+  
+}
+.pCard {
+  margin-left: 10%;
+  margin-top: -40%;
+}
 
 
 body {
-  background-color: #fffaf0;
+  background-color: #dfdfdf;
   
 }
 

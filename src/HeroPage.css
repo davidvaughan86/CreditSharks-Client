@@ -4,12 +4,12 @@
     padding: 4.5%;
 }
 
-.frame {
+/* .frame {
     box-sizing: border-box;
     width: 340px;
     height: 710px;
     overflow: hidden;
-    /* background-color: #f2f3f4; */
+   
     background-color: rgba(255, 255, 255, 0.5);
     display: inline-flex;
     flex-direction: column;
@@ -17,7 +17,7 @@
     border: 10px solid #F8F8FF;
     box-shadow: 10px 10px 10px black;
     
-  }
+  } */
   .frameVideo {
     box-sizing: border-box;
     width: 270px;
