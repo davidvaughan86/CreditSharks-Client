@@ -22,8 +22,8 @@ import {FaChevronCircleLeft} from 'react-icons/fa';
 import {FaChevronCircleRight} from 'react-icons/fa';
 import {useState} from 'react';
 import Slide from '@material-ui/core/Slide'
-
-
+import MyCart from './Components/MyCart'
+import ContactUs from './Components/ContactUs'
 
 function Arrow(props) {
   const { direction, clickFunction} = props;
@@ -57,7 +57,11 @@ function App() {
       setSlideIn(true);
     },500) // gives trasition effect
   };
-
+  const [cart, setCart] = useState([])
+  function addToCart (item) {
+    setCart ([...cart,
+     item])
+  }
   
   return (
     
@@ -79,7 +83,7 @@ function App() {
             <Route path = '/products' >
               <Slide in={slideIn} direction={slideDirection}>
                 <div>             
-                <ProductSlide content ={content} />
+                <ProductSlide content ={content} cart={cart} addtoCart={addToCart} />
                 </div>
               </Slide>
               <div className="arrows">
@@ -87,14 +91,19 @@ function App() {
               direction='left'
               clickFunction={() => onArrowClick('left')}
               />
+
               <Arrow 
-              // style={{textShadowColor: 'red',
-              //                 shadowOpacity: 1,
-              //                 shadowRadius: 5,
-              //                 textShadowOffset:{width: 5,height: 2}}}
+              
               direction='right'
               clickFunction={() => onArrowClick('right')}
               />
+
+              <Route path='/myCart'>
+                <MyCart cart={cart} />
+              </Route>
+              <Route path ='/contactus'>
+                <ContactUs />
+              </Route>
             </div>
             </Route>
 
