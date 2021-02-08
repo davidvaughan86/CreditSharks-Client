@@ -1,8 +1,10 @@
 .heroPageContainer {
-    display: flex;
-    flex-direction: column;
-    padding: 4.5%;
+  display: flex;
+  flex-direction: row;
+  padding: 4.5%;
+  justify-content: center;
 }
+
 
 /* .frame {
     box-sizing: border-box;
@@ -20,16 +22,14 @@
   } */
   .frameVideo {
     box-sizing: border-box;
-    width: 270px;
-    height: 270px;
+    width: 80%;
+    height: 100%;
     overflow: hidden;
     background-color: #d4cece;
-   
     border-radius: 167px;
     border: 13px solid #9F0000;
-    margin-top: 30px;
-    margin-left: 25px;
-    box-shadow: 5px 5px 5px black
+    
+    box-shadow: 5px 5px 5px black;
     
   }
   
@@ -72,4 +72,10 @@
   .freedom:hover span:after {
     opacity: 1;
     right: 0;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
