@@ -11,6 +11,7 @@
     "emailjs": "^3.4.0",
     "emailjs-com": "^2.6.4",
     "react": "^17.0.1",
+    "react-burger-menu": "^3.0.3",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",
     "react-player": "^2.8.2",
