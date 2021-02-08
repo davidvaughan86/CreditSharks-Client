@@ -10,12 +10,12 @@ import {
 } from 'react-router-dom'
 import Header from './Components/Header'
 import './Components/Component CSS/ProductSlide.css'
-import './HeroPage.css'
+import './Components/Component CSS/HeroPage.css'
 import HeroPage from './Components/HeroPage';
 import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
 import ThreeDRotation from '@material-ui/icons/ThreeDRotation';
 import LeadCapture from './Components/LeadCapture';
-import './LeadCapture.css';
+import './Components/Component CSS/LeadCapture.css';
 import ProductSlide from './Components/ProductSlide';
 import {Packages} from './Components/Packages';
 import {FaChevronCircleLeft} from 'react-icons/fa';
@@ -57,12 +57,11 @@ function App() {
       setSlideIn(true);
     },500) // gives trasition effect
   };
-  const [cart, setCart] = useState([])
+  const [cart, setCart] = useState([{}])
   function addToCart (item) {
-    setCart ([...cart,
-     item])
-  }
-  
+    setCart ([item])
+    }
+  console.log(cart)
   return (
     
     <Router>
@@ -83,7 +82,7 @@ function App() {
             <Route path = '/products' >
               <Slide in={slideIn} direction={slideDirection}>
                 <div>             
-                <ProductSlide content ={content} cart={cart} addtoCart={addToCart} />
+                <ProductSlide content ={content} addToCart={addToCart}/>
                 </div>
               </Slide>
               <div className="arrows">
@@ -98,14 +97,15 @@ function App() {
               clickFunction={() => onArrowClick('right')}
               />
 
-              <Route path='/myCart'>
+              
+            </div>
+            </Route>
+            <Route path='/myCart'>
                 <MyCart cart={cart} />
               </Route>
               <Route path ='/contactus'>
                 <ContactUs />
               </Route>
-            </div>
-            </Route>
 
 
 

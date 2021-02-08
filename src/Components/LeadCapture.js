@@ -38,7 +38,7 @@ export default function LeadCapture() {
                     placeholder={"First Name"}
                     placeholderColor={"#aaa"}
                     radius={8}
-                    textColor={"#333"}
+                    // textColor={"#333"}
                     value={""}
                     />
                     <br/>
@@ -66,7 +66,7 @@ export default function LeadCapture() {
                     placeholder={"Last Name"}
                     placeholderColor={"#aaa"}
                     radius={8}
-                    textColor={"#333"}
+                    // textColor={"#333"}
                     value={""}
                     />
                     <br/>
@@ -94,7 +94,7 @@ export default function LeadCapture() {
                     placeholder={"Email"}
                     placeholderColor={"#aaa"}
                     radius={8}
-                    textColor={"#333"}
+                    // textColor={"#333"}
                     value={""}
                     />
                     <br/>
@@ -123,7 +123,7 @@ export default function LeadCapture() {
                     placeholder={"Phone"}
                     placeholderColor={"#aaa"}
                     radius={8}
-                    textColor={"#333"}
+                    // textColor={"#333"}
                     value={""}
                     />
                     

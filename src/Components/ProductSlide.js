@@ -1,6 +1,6 @@
 import React from 'react'
 import {Card, makeStyles } from '@material-ui/core'
-import './Component CSS/ProductSlide.css'
+// import './Component CSS/ProductSlide.css'
 import {useHistory} from 'react-router-dom'
 // import {Packages} from './Packages'
 
@@ -9,9 +9,12 @@ export default function ProductSlide(props) {
     
     const history = useHistory()
     const handleClick=()=> {
-        props.cart.addToCart(props.cart)
+        props.addToCart(props.content)
         history.push('/myCart')
+        
+        
     }
+    
     const useStyles = makeStyles(() => ({
         card: {
             backgroundColor,
@@ -36,7 +39,9 @@ export default function ProductSlide(props) {
     
 
     return (
-        
+        <div> 
+            
+
         <Card className={classes.card} >
             <div className="pCard" max-width='70%'>
                 <img src={url} width='250px' onClick={(e) => {
@@ -51,7 +56,7 @@ export default function ProductSlide(props) {
             </div>
             
         </Card>
-        
+        </div>
     )
 }
 
