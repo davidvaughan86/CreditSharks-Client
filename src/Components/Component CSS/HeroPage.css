@@ -22,8 +22,8 @@
   } */
   .frameVideo {
     box-sizing: border-box;
-    width: 80%;
-    height: 100%;
+    width: 90%;
+    height: 40%;
     overflow: hidden;
     background-color: #d4cece;
     border-radius: 167px;
@@ -32,7 +32,11 @@
     box-shadow: 5px 5px 5px black;
     
   }
-  
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .freedom {
     border-radius: 4px;
     background: linear-gradient(to right, #b2c3ca, #4ca2cb, #b7c8cf) !important;
@@ -45,9 +49,7 @@
     width: 255px;
     transition: all 0.4s;
     cursor: pointer;
-    margin: 5px;
-    padding-left: 12;
-    margin-left: 5%;
+    
     display: flex; 
     
     

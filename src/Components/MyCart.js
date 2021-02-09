@@ -8,10 +8,10 @@ export default function MyCart (props) {
     
     return (
         
-        <div className="checkOutContainer">
+        <div className="checkOutContainer" >
                 
-                    <div className="productCheckOut">
-                        <img src={props.cart[0].url} alt={props.cart[0].title}/>
+                    <div className="frame">
+                        <img src={props.cart[0].url} alt={props.cart[0].title} style={{width:'100%'}}/>
                         <div className="checkoutInfo">
                             
                             
@@ -29,7 +29,10 @@ export default function MyCart (props) {
                                 onClick={(e) => {
                                     history.push('/checkout')
                                 }}
-                                role="link"
+                                role="link" style={{
+                                    border: '2px solid black',
+                                    borderRadius: '20px'
+                                }}
                                 >
                                     Go To Check Out
                                 </button>

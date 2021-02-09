@@ -38,7 +38,17 @@ function App() {
   const [slideIn, setSlideIn] = useState(true) //changes direction of card exit so it appears to slide across the screen
   const [slideDirection, setSlideDirection]=useState('down') // renders first slide coming down
   const [index, setIndex] = useState(0); // useState will hold on to which card we are displaying in products
-  
+  const [lead, setLead] =useState([{}])
+  function registerLead(form) {
+        setLead([...lead,form])
+        
+    }
+    console.log(lead)
+  const [cart, setCart] = useState([{}])
+  function addToCart (item) {
+    setCart ([item])
+    }
+  console.log(cart)
   const content = Packages[index]
   const numSlides = Packages.length
 
@@ -57,11 +67,7 @@ function App() {
       setSlideIn(true);
     },500) // gives trasition effect
   };
-  const [cart, setCart] = useState([{}])
-  function addToCart (item) {
-    setCart ([item])
-    }
-  console.log(cart)
+  
   return (
     
     <Router>
@@ -76,7 +82,7 @@ function App() {
             </Route>
 
             <Route path = '/leadcapture'>
-            <LeadCapture onClick />
+            <LeadCapture registerLead={registerLead} />
             </Route>
 
             <Route path = '/products' >

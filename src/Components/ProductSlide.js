@@ -44,7 +44,7 @@ export default function ProductSlide(props) {
 
         <Card className={classes.card} >
             <div className="pCard" max-width='70%'>
-                <img src={url} width='250px' onClick={(e) => {
+                <img src={url} width='100%' onClick={(e) => {
                     handleClick()}}/>
                 
                 <h3>{title}</h3>

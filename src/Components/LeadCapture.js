@@ -5,12 +5,22 @@ import {Link} from 'react-router-dom'
 import {MenuItem} from '@material-ui/core'
 import {useHistory} from 'react-router-dom'   
 import logo from './CSlogo.png'    
+import {useState} from 'react'
 
 
-
-export default function LeadCapture() {
+export default function LeadCapture(props) {
     const history = useHistory()
-   
+    const [name, setName] = useState('')
+    const [lastName, setLastName] = useState('')
+    const [email, setEmail] = useState('')
+    const [phone, setPhone] = useState('')
+
+    const handleClick=() => {
+        props.registerLead(props)
+        history.push('/products')
+    }
+    
+
     return (
         
         <div className='leadPageContainer' max-width = '80%'>
@@ -39,7 +49,10 @@ export default function LeadCapture() {
                     placeholderColor={"#aaa"}
                     radius={8}
                     // textColor={"#333"}
-                    value={""}
+                    value={name}
+                    onChange={(e) =>{
+                    setName(e.target.value)
+                    }}
                     />
                     <br/>
                     <br/>
@@ -67,7 +80,10 @@ export default function LeadCapture() {
                     placeholderColor={"#aaa"}
                     radius={8}
                     // textColor={"#333"}
-                    value={""}
+                    value={lastName}
+                    onChange = {(e) => {
+                        setLastName(e.target.value)
+                    }}
                     />
                     <br/>
                     <br/>
@@ -95,7 +111,10 @@ export default function LeadCapture() {
                     placeholderColor={"#aaa"}
                     radius={8}
                     // textColor={"#333"}
-                    value={""}
+                    value={email}
+                    onChange={(e) => {
+                        setEmail(e.target.value)
+                    }}
                     />
                     <br/>
                     <br/>
@@ -124,7 +143,11 @@ export default function LeadCapture() {
                     placeholderColor={"#aaa"}
                     radius={8}
                     // textColor={"#333"}
-                    value={""}
+                    value={phone}
+                    onChange={(e) => {
+                        setPhone(e.target.value)
+                    }}
+
                     />
                     
                     </div>
@@ -139,7 +162,7 @@ export default function LeadCapture() {
                         </MenuItem>  */}
                         <div className='submit' max-width ='100%'>
                             <img src ={logo} width='200px' onClick={(e) => {
-                            history.push('/products')
+                            handleClick()
                             }}/>
                             
                         </div>

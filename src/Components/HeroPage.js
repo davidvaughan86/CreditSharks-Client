@@ -8,14 +8,18 @@ export default function HeroPage () {
     return (
         <div className='heroPageContainer' max-width = '80%'>
             <div className="frame">
+                <br/>
                 <div className="logo" max-with ='60%'>
                     <img src = {logo} width='108%' />
+                    <br/>
                     <Link to={'/leadcapture'} style={{ textDecoration: 'none' }}>
                         <span class="freedom" 
                                 align="center" 
+                                
                             >
                             YES I WANT FINANCIAL FREEDOM 
-                        </span>                                                        
+                        </span> 
+                        <br/>                                                       
                     </Link>
                 </div>
                

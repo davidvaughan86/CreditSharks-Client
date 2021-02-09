@@ -23,26 +23,26 @@ export const Packages = [
 },{ 
     backgroundColor: "#d4af37", 
     title: "Whale Shark Payment Plan",
-    description: "Payment Plan Package - Start today for $79",
+    description: "Monthly Subscription - Cant pay the full amount today? Well this package is for you. $79 Administration Fee then $99 a month  - 6 month minimum subscription - This package includes all the essentials.",
     url: image3,
     price: '$79'
 },{ 
     backgroundColor: "rgb(226, 226, 226)", 
     title: "Hammerhead Credit Repair Package",
-    description: "We Attack hard inquiries (All three Credit Bureaus)",
+    description: "In this program we Attack hard inquiries (All three Credit Bureaus)",
     url: image4,
     price: '$199'
     
 },{ 
     backgroundColor: "rgb(226, 226, 226)", 
     title: "Blue shark Credit Repair Package",
-    description: "We Attack: Up to 5 Inquires, late payments, collections, and charge offs",
+    description: "In this program we Attack: Up to 5 Inquires, late payments, collections, and charge offs on all three Credit Bureaus. ",
     url: image5,
     price: '$499'
 },{ 
     backgroundColor: "#d4af37", 
     title: "Great White Credit Repair Package",
-    description: " We Attack Bankruptcies, Evictions, Repos, and Collection Accounts.",
+    description: "This Program covers Bankruptcies, Evictions, Repos, Hard Inquiries and Collection Accounts. This package also includes one full year of service",
     url: image6,
     price: '$1099  includes 1 year of service' 
 },
