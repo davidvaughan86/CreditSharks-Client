@@ -1,7 +1,14 @@
+creditShark{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .frame {
   box-sizing: border-box;
-  width: 100%;
-  height: 710px;
+  width: 90%;
+  height: 90vh;
+  padding: 5%;
   overflow: hidden;
   /* background-color: #f2f3f4; */
   background-color: rgb(226, 226, 226);
@@ -19,10 +26,13 @@
   
   
 }
-.pCard {
-  margin-left: 10%;
-  margin-top: -40%;
+
+App {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
 }
+
 
 
 @media only screen

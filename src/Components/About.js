@@ -5,7 +5,8 @@ export default function About () {
     
       
     return (
-        <div className="aboutUs" max-width='60%'>
+        <div className="aboutContainer">
+        <div className="frame" max-width='60%'>
             <h1> ABOUT US</h1>
             <img src={logo} width='100%'/>
             <h3>At Credit Sharks we believe everyone deserves Financial Freedom.
@@ -26,6 +27,7 @@ export default function About () {
 
 
 
+        </div>
         </div>
 
 

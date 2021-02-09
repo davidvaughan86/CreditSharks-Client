@@ -39,12 +39,12 @@ export default function ProductSlide(props) {
     
 
     return (
-        <div> 
+        <div className="productSlideContainer"> 
             
 
         <Card className={classes.card} >
             <div className="pCard" max-width='70%'>
-                <img src={url} width='100%' onClick={(e) => {
+                <img src={url} width='50%' onClick={(e) => {
                     handleClick()}}/>
                 
                 <h3>{title}</h3>

@@ -25,6 +25,8 @@ import Slide from '@material-ui/core/Slide'
 import MyCart from './Components/MyCart'
 import ContactUs from './Components/ContactUs'
 import About from './Components/About'
+import './Components/Component CSS/About.css'
+import './Components/Component CSS/MyCart.css'
 
 function Arrow(props) {
   const { direction, clickFunction} = props;
@@ -72,8 +74,10 @@ function App() {
   return (
     
   <Router>
-  <div className="App">
-  <Header />
+    <Header />
+    <br/>
+  <div className="creditShark">
+  
   <Switch>
     <Route path='/about' >
       <About />
@@ -98,14 +102,19 @@ function App() {
                         addToCart={addToCart}/>
         </div>
       </Slide>
-        <div className="arrows">
+        <div className="grid-arrows">
+          <div className="arrowL">
           <Arrow
                 direction='left'
                 clickFunction={() => onArrowClick('left')}/>
+          </div> 
+          <div className="arrowR">
           <Arrow 
                 direction='right'
                 clickFunction={() => onArrowClick('right')
-                }/>    
+                }/>
+          </div>   
+          
         </div>      
     </Route>
     

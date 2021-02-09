@@ -23,9 +23,9 @@ export default function LeadCapture(props) {
 
     return (
         
-        <div className='leadPageContainer' max-width = '80%'>
-            <div className="leadFrame">
-                <div className="inputContainer">
+        <div className='leadPageContainer' max-width = '30%'>
+            
+                <div className="frame">
                     
             <Input 
   
@@ -149,28 +149,26 @@ export default function LeadCapture(props) {
                     }}
 
                     />
+                    <div className='submit' max-width ='100%'>
+                            <img src ={logo} width='200px' onClick={(e) => {
+                            handleClick()
+                            }}/>
+                            
+                        </div>
                     
                     </div>
 
                     <br/>
                     <br/>
 
-                    <Link to={'/products'} variant="contained" style={{backgroundColor: 'transparent', color: '#9F0000'}}>
-                       {/* <MenuItem style={{padding:'20px', border:'2px solid', borderRadius:'60px'}}>
+                    {/* <Link to={'/products'} variant="contained" style={{backgroundColor: 'transparent', color: '#9F0000'}}>
                        
-                           Submit
-                        </MenuItem>  */}
-                        <div className='submit' max-width ='100%'>
-                            <img src ={logo} width='200px' onClick={(e) => {
-                            handleClick()
-                            }}/>
-                            
-                        </div>
-                    </Link>
+                        
+                    </Link> */}
                                 
 
 
             </div>
-        </div>
+       
     )
 }

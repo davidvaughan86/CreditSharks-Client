@@ -1,26 +1,58 @@
 
-.productSlide {
-    text-align: center;
-    padding: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.productSlideContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* .MuiPaper-root.MuiCard-root-makeStyles-card-5.MuiPaper-elevation1.Muipaper-rounded {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+.pCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.arrows {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 50px;
-  }
+.grid-arrows {
+  display: inline-grid;
+  box-sizing: border-box;
+  /* grid-template-columns: 1fr 1fr; */
+  justify-self: center;
+  grid-template-columns: 100% 50% 50% 1000%;
+  grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
   
-  .arrows svg {
+  
+}
+.arrowL {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  
+}
+.arrowR {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  
+}  
+    
+ 
+  svg {
     opacity: 80%;
     height: 60px;
     width: 60px;
     cursor: pointer;
     color: #9F0000;
     filter: drop-shadow(10px 10px 4px black);
+
+    
+    
+    
+    
   }
 
   @media only screen
