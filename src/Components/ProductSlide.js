@@ -1,11 +1,13 @@
 import React from 'react'
 import {Card, makeStyles } from '@material-ui/core'
-// import './Component CSS/ProductSlide.css'
+
 import {useHistory} from 'react-router-dom'
-// import {Packages} from './Packages'
+
+
+
 
 export default function ProductSlide(props) {
-    const { backgroundColor, url , title, description, price} = props.content
+    const { backgroundColor, url , special1, special2, title, description, price} = props.content
     
     const history = useHistory()
     const handleClick=()=> {
@@ -42,15 +44,21 @@ export default function ProductSlide(props) {
         <div className="productSlideContainer"> 
             
 
-        <Card className={classes.card} >
-            <div className="pCard" max-width='70%'>
-                <img src={url} width='50%' onClick={(e) => {
+        <Card className={classes.card} style={{display:'flex',margin:'0%', padding:'0%', width:'80%', height:'100%'}}>
+            <div className="pCard" max-width='100%'>
+                <img src={url} width='100%' onClick={(e) => {
                     handleClick()}}/>
                 
                 <h3>{title}</h3>
                 
                     <p>{description}</p>
+                    <p>{special1}</p>
+                    <p onClick ={(e) => {
+                        history.push('/scheduler')
+                    
+                    }}>{special2}</p>
                     <h5>{price}</h5>
+                    
                 
                 
             </div>

@@ -27,6 +27,7 @@ import ContactUs from './Components/ContactUs'
 import About from './Components/About'
 import './Components/Component CSS/About.css'
 import './Components/Component CSS/MyCart.css'
+import Scheduler from './Components/Scheduler'
 
 function Arrow(props) {
   const { direction, clickFunction} = props;
@@ -83,6 +84,10 @@ function App() {
       <About />
     </Route>
       
+      <Route path='/scheduler' >
+        <Scheduler />
+      </Route>
+
     <Route path ='/' exact>
       <HeroPage />              
     </Route>

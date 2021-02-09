@@ -1,7 +1,7 @@
 
 .productSlideContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 /* .MuiPaper-root.MuiCard-root-makeStyles-card-5.MuiPaper-elevation1.Muipaper-rounded {

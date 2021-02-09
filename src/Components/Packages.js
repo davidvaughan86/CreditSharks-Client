@@ -19,11 +19,13 @@ export const Packages = [
     title: "Free Consultation - Contact Us Today!",
     description: "Free consultation",
     url: image2,
-    price: '$0'
+    price: '$0',
+    special1: 'Please Schedule Here',
+    special2: 'https://calendly.com/thecreditsharks'
 },{ 
     backgroundColor: "#d4af37", 
     title: "Whale Shark Payment Plan",
-    description: "Monthly Subscription - Cant pay the full amount today? Well this package is for you. $79 Administration Fee then $99 a month  - 6 month minimum subscription - This package includes all the essentials.",
+    description: "Monthly Subscription - Cant pay the full amount today? Well this package is for you. $79 Administration Fee then $99 a month  - 6 month minimum subscription.",
     url: image3,
     price: '$79'
 },{ 
