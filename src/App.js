@@ -24,6 +24,7 @@ import {useState} from 'react';
 import Slide from '@material-ui/core/Slide'
 import MyCart from './Components/MyCart'
 import ContactUs from './Components/ContactUs'
+import About from './Components/About'
 
 function Arrow(props) {
   const { direction, clickFunction} = props;
@@ -70,60 +71,54 @@ function App() {
   
   return (
     
-    <Router>
-      <div className="App">
+  <Router>
+  <div className="App">
+  <Header />
+  <Switch>
+    <Route path='/about' >
+      <About />
+    </Route>
+      
+    <Route path ='/' exact>
+      <HeroPage />              
+    </Route>
+      
+    <Route path='/contactus'>
+      <ContactUs />
+    </Route>
 
-        <Header />
+    <Route path = '/leadcapture'>
+      <LeadCapture registerLead={registerLead} />
+    </Route>
+      
+    <Route path = '/products' >
+      <Slide in={slideIn} direction={slideDirection}>
+        <div>             
+          <ProductSlide content ={content}
+                        addToCart={addToCart}/>
+        </div>
+      </Slide>
+        <div className="arrows">
+          <Arrow
+                direction='left'
+                clickFunction={() => onArrowClick('left')}/>
+          <Arrow 
+                direction='right'
+                clickFunction={() => onArrowClick('right')
+                }/>    
+        </div>      
+    </Route>
+    
+    <Route path='/myCart'>
+        <MyCart cart={cart} />
+    </Route>  
 
-          <Switch>
-
-            <Route path ='/' exact>
-              <HeroPage />              
-            </Route>
-
-            <Route path = '/leadcapture'>
-            <LeadCapture registerLead={registerLead} />
-            </Route>
-
-            <Route path = '/products' >
-              <Slide in={slideIn} direction={slideDirection}>
-                <div>             
-                <ProductSlide content ={content} addToCart={addToCart}/>
-                </div>
-              </Slide>
-              <div className="arrows">
-              <Arrow
-              direction='left'
-              clickFunction={() => onArrowClick('left')}
-              />
-
-              <Arrow 
-              
-              direction='right'
-              clickFunction={() => onArrowClick('right')}
-              />
-
-              
-            </div>
-            </Route>
-            <Route path='/myCart'>
-                <MyCart cart={cart} />
-              </Route>
-              <Route path ='/contactus'>
-                <ContactUs />
-              </Route>
-
-
-
-
-
-
-          </Switch>
-          
-        
-      </div>
-    </Router>
-  );
+  </Switch>
+  </div>
+  </Router>
+  )
+  
+  
 }
 
 export default App;
