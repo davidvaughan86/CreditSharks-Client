@@ -20,7 +20,7 @@ export default function ProductSlide(props) {
     const useStyles = makeStyles(() => ({
         card: {
             backgroundColor,
-            border: '10px solid #F8F8FF', 
+            border: '10px solid E5EFF8', 
             borderRadius:'85px',
             padding: '75px 50px',
             margin: '0px 25px',

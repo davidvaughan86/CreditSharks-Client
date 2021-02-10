@@ -30,6 +30,7 @@ import './Components/Component CSS/MyCart.css'
 import Scheduler from './Components/Scheduler'
 import SocialMedia from './Components/SocialMedia'
 import './Components/Component CSS/SocialMedia.css'
+import './Components/Component CSS/SlideMenu.css'
 
 function Arrow(props) {
   const { direction, clickFunction} = props;

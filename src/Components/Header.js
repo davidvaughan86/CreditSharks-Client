@@ -7,6 +7,8 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import SlideMenu from './SlideMenu'
+import {GiSharkJaws} from 'react-icons/gi'
+import {GiSharkFin} from 'react-icons/gi'
 
 
 
@@ -22,50 +24,50 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const SlideMenuStyles = {
-  bmBurgerButton: {
-    position: 'fixed',
-    width: '36px',
-    height: '30px',
-    left: '36px',
-    top: '36px'
-  },
-  bmBurgerBars: {
-    background: '#373a47'
-  },
-  bmBurgerBarsHover: {
-    background: '#a90000'
-  },
-  bmCrossButton: {
-    height: '24px',
-    width: '24px'
-  },
-  bmCross: {
-    background: '#bdc3c7'
-  },
-  bmMenuWrap: {
-    position: 'fixed',
-    height: '100%'
-  },
-  bmMenu: {
-    background: '#373a47',
-    padding: '2.5em 1.5em 0',
-    fontSize: '1.15em'
-  },
-  bmMorphShape: {
-    fill: '#373a47'
-  },
-  bmItemList: {
-    color: '#b8b7ad',
-    padding: '0.8em'
-  },
-  bmItem: {
-    display: 'inline-block'
-  },
-  bmOverlay: {
-    background: 'rgba(0, 0, 0, 0.3)'
-  }
-}
+// const SlideMenuStyles = {
+//   bmBurgerButton: {
+//     position: 'fixed',
+//     width: '36px',
+//     height: '30px',
+//     left: '36px',
+//     top: '36px'
+//   },
+//   bmBurgerBars: {
+//     background: '#373a47'
+//   },
+//   bmBurgerBarsHover: {
+//     background: '#a90000'
+//   },
+//   bmCrossButton: {
+//     height: '24px',
+//     width: '24px'
+//   },
+//   bmCross: {
+//     background: '#bdc3c7'
+//   },
+//   bmMenuWrap: {
+//     position: 'fixed',
+//     height: '100%'
+//   },
+//   bmMenu: {
+//     background: '#373a47',
+//     padding: '2.5em 1.5em 0',
+//     fontSize: '1.15em'
+//   },
+//   bmMorphShape: {
+//     fill: '#373a47'
+//   },
+//   bmItemList: {
+//     color: '#b8b7ad',
+//     padding: '0.8em'
+//   },
+//   bmItem: {
+//     display: 'inline-block'
+//   },
+//   bmOverlay: {
+//     background: 'rgba(0, 0, 0, 0.3)'
+//   }
+// }
 
 export default function ButtonAppBar() {
   const classes = useStyles();
@@ -81,16 +83,18 @@ export default function ButtonAppBar() {
       
       >
         <Toolbar>
+        <GiSharkFin/>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon 
            />
            <div className="slideMenu">
-           <SlideMenu style={{SlideMenuStyles}}/>
+           <SlideMenu />
            </div>
           </IconButton>
           <Typography variant="h6" className={classes.title}>
             
           </Typography>
+          <GiSharkJaws/>
           <Button color="inheritred">Login</Button>
         </Toolbar>
       </AppBar>

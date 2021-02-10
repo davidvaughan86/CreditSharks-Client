@@ -8,16 +8,19 @@ export default function Scheduler () {
     
 
   return (
-    <div className="calendleyContainer" style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
-        <div className="frame">
-      <InlineWidget url="https://calendly.com/thecreditsharks" 
-      />
+    <div>
+    <div className="calendleyContainer" 
+          style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
+      <div className="frame">
+            <InlineWidget url="https://calendly.com/thecreditsharks"/>
+      </div>
       
-      
-  
-        </div>
        
     </div>
+
+    
+    </div>
+    
   );
 };
  

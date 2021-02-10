@@ -9,13 +9,13 @@ import image6 from '../GreatWhiteShark.png';
 
 export const Packages = [
   {
-    backgroundColor: "rgb(226, 226, 226)",
+    backgroundColor: "#E5EFF8",
     title: "Credit Sharks - Beta Coruse",
     description: 'Coming Soon',
     url: image1,
     price: "$0"
   },
-  { backgroundColor: "rgb(226, 226, 226)",
+  { backgroundColor: "#E5EFF8",
     title: "Free Consultation - Contact Us Today!",
     description: "Free consultation",
     url: image2,
@@ -29,14 +29,14 @@ export const Packages = [
     url: image3,
     price: '$79'
 },{ 
-    backgroundColor: "rgb(226, 226, 226)", 
+    backgroundColor: "#E5EFF8", 
     title: "Hammerhead Credit Repair Package",
     description: "In this program we Attack hard inquiries (All three Credit Bureaus)",
     url: image4,
     price: '$199'
     
 },{ 
-    backgroundColor: "rgb(226, 226, 226)", 
+    backgroundColor: "#E5EFF8", 
     title: "Blue shark Credit Repair Package",
     description: "In this program we Attack: Up to 5 Inquires, late payments, collections, and charge offs on all three Credit Bureaus. ",
     url: image5,

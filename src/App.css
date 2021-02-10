@@ -12,13 +12,13 @@ creditShark{
   height: 90vh;
   padding: 5%;
   overflow: hidden;
-  /* background-color: #f2f3f4; */
-  background-color: rgb(226, 226, 226);
+  
+  background-color: #E5EFF8;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   border-radius: 94px;
-  border: 10px solid #ffffff;
+  border: 10px solid #E5EFF8;
   box-shadow: 10px 10px 10px black;
   
 }
@@ -43,7 +43,7 @@ and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
   
 body {
-  background-color: #dfdfdf;
+  background-color: #F3F5F6;
   
 }
 }
