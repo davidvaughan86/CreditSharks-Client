@@ -28,6 +28,8 @@ import About from './Components/About'
 import './Components/Component CSS/About.css'
 import './Components/Component CSS/MyCart.css'
 import Scheduler from './Components/Scheduler'
+import SocialMedia from './Components/SocialMedia'
+import './Components/Component CSS/SocialMedia.css'
 
 function Arrow(props) {
   const { direction, clickFunction} = props;
@@ -96,6 +98,9 @@ function App() {
     <Route path='/contactus'>
       <ContactUs  />
     </Route>
+    <Route path='/socialmedia' exact>
+      <SocialMedia />
+    </Route>
 
     <Route path = '/leadcapture'>
       <LeadCapture  />
@@ -108,6 +113,9 @@ function App() {
                         addToCart={addToCart}/>
         </div>
       </Slide>
+      <br/>
+      <br/>
+      <br/>
         <div className="grid-arrows">
           <div className="arrowL">
           <Arrow
