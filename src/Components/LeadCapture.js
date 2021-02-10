@@ -6,27 +6,45 @@ import {MenuItem} from '@material-ui/core'
 import {useHistory} from 'react-router-dom'   
 import logo from './CSlogo.png'    
 import {useState} from 'react'
+import emailjs from 'emailjs-com'
 
 
-export default function LeadCapture(props) {
+export default function LeadCapture() {
     const history = useHistory()
-    const [name, setName] = useState('')
-    const [lastName, setLastName] = useState('')
-    const [email, setEmail] = useState('')
-    const [phone, setPhone] = useState('')
+    // const [name, setName] = useState('')
+    // const [lastName, setLastName] = useState('')
+    // const [email, setEmail] = useState('')
+    // const [phone, setPhone] = useState('')
 
+    // const handleClick=() => {
+    //     props.registerLead(props)
+    //     history.push('/products')
+    // }
     const handleClick=() => {
-        props.registerLead(props)
+        
         history.push('/products')
     }
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_ppysl3c', 'template_x3lq2mf', e.target, 'user_sa7Oug4IuHerMJnhC6CCX')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
     
 
     return (
         
         <div className='leadPageContainer' max-width = '30%'>
             
-                <div className="frame">
-                    
+                <form className="frame" onSubmit={sendEmail}>
+                    <br/>
+                    <br/>
+                    <br/>
             <Input 
   
                     backgroundColor={"#EBEBEB"}
@@ -49,10 +67,10 @@ export default function LeadCapture(props) {
                     placeholderColor={"#aaa"}
                     radius={8}
                     // textColor={"#333"}
-                    value={name}
-                    onChange={(e) =>{
-                    setName(e.target.value)
-                    }}
+                    // value={name}
+                    // onChange={(e) =>{
+                    // setName(e.target.value)
+                    // }}
                     />
                     <br/>
                     <br/>
@@ -80,10 +98,10 @@ export default function LeadCapture(props) {
                     placeholderColor={"#aaa"}
                     radius={8}
                     // textColor={"#333"}
-                    value={lastName}
-                    onChange = {(e) => {
-                        setLastName(e.target.value)
-                    }}
+                    // value={lastName}
+                    // onChange = {(e) => {
+                    //     setLastName(e.target.value)
+                    // }}
                     />
                     <br/>
                     <br/>
@@ -111,10 +129,10 @@ export default function LeadCapture(props) {
                     placeholderColor={"#aaa"}
                     radius={8}
                     // textColor={"#333"}
-                    value={email}
-                    onChange={(e) => {
-                        setEmail(e.target.value)
-                    }}
+                    // value={email}
+                    // onChange={(e) => {
+                    //     setEmail(e.target.value)
+                    // }}
                     />
                     <br/>
                     <br/>
@@ -143,10 +161,10 @@ export default function LeadCapture(props) {
                     placeholderColor={"#aaa"}
                     radius={8}
                     // textColor={"#333"}
-                    value={phone}
-                    onChange={(e) => {
-                        setPhone(e.target.value)
-                    }}
+                    // value={phone}
+                    // onChange={(e) => {
+                    //     setPhone(e.target.value)
+                    // }}
 
                     />
                     <div className='submit' max-width ='100%'>
@@ -156,7 +174,7 @@ export default function LeadCapture(props) {
                             
                         </div>
                     
-                    </div>
+                </form>
 
                     <br/>
                     <br/>

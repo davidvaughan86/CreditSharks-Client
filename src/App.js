@@ -47,6 +47,7 @@ function App() {
         setLead([...lead,form])
         
     }
+  
     console.log(lead)
   const [cart, setCart] = useState([{}])
   function addToCart (item) {
@@ -93,11 +94,11 @@ function App() {
     </Route>
       
     <Route path='/contactus'>
-      <ContactUs />
+      <ContactUs  />
     </Route>
 
     <Route path = '/leadcapture'>
-      <LeadCapture registerLead={registerLead} />
+      <LeadCapture  />
     </Route>
       
     <Route path = '/products' >
