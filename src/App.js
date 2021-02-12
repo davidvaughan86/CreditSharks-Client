@@ -31,8 +31,8 @@ import SocialMedia from './Components/SocialMedia'
 import './Components/Component CSS/SocialMedia.css'
 import './Components/Component CSS/SlideMenu.css'
 import Commerce from '@chec/commerce.js'
-
-
+import StripeContainer from './Components/Stripe/StripeContainer'
+import './Components/Component CSS/StripeContainer.css'
 
 const commerce = new Commerce('pk_test_23168d2cc5642059562235ca960a60d66570c00e15610', true)          
 
@@ -141,7 +141,10 @@ function App() {
     
     <Route path='/myCart'>
         <MyCart cart={cart} />
-    </Route>  
+    </Route> 
+    <Route path="/checkout">
+    <StripeContainer />
+    </Route>
 
   </Switch>
   </div>
