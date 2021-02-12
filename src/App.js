@@ -12,8 +12,7 @@ import Header from './Components/Header'
 import './Components/Component CSS/ProductSlide.css'
 import './Components/Component CSS/HeroPage.css'
 import HeroPage from './Components/HeroPage';
-import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
-import ThreeDRotation from '@material-ui/icons/ThreeDRotation';
+
 import LeadCapture from './Components/LeadCapture';
 import './Components/Component CSS/LeadCapture.css';
 import ProductSlide from './Components/ProductSlide';
@@ -31,6 +30,13 @@ import Scheduler from './Components/Scheduler'
 import SocialMedia from './Components/SocialMedia'
 import './Components/Component CSS/SocialMedia.css'
 import './Components/Component CSS/SlideMenu.css'
+import Commerce from '@chec/commerce.js'
+
+
+
+const commerce = new Commerce('pk_test_23168d2cc5642059562235ca960a60d66570c00e15610', true)          
+
+
 
 function Arrow(props) {
   const { direction, clickFunction} = props;

@@ -9,9 +9,9 @@ creditShark{
 .frame {
   box-sizing: border-box;
   width: 90%;
-  height: 90vh;
+  overflow: scroll;
   padding: 5%;
-  overflow: hidden;
+  
   
   background-color: #E5EFF8;
   display: inline-flex;
@@ -19,7 +19,7 @@ creditShark{
   align-items: center;
   border-radius: 94px;
   border: 10px solid #E5EFF8;
-  box-shadow: 10px 10px 10px black;
+  box-shadow: 30px 30px 30px black;
   
 }
 

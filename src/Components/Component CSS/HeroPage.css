@@ -6,21 +6,23 @@
 }
 
 
-/* .frame {
-    box-sizing: border-box;
-    width: 340px;
-    height: 710px;
-    overflow: hidden;
-   
-    background-color: rgba(255, 255, 255, 0.5);
-    display: inline-flex;
-    flex-direction: column;
-    border-radius: 94px;
-    border: 10px solid #F8F8FF;
-    box-shadow: 10px 10px 10px black;
-    
-  } */
-  .frameVideo {
+/* .Heroframe {
+  box-sizing: border-box;
+  width: 90%;
+  
+  padding: 5%;
+  overflow: hidden;
+  
+  background-color: #E5EFF8;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 94px;
+  border: 10px solid #E5EFF8;
+  box-shadow: 10px 10px 10px black;
+  
+} */
+  /* .frameVideo {
     box-sizing: border-box;
     width: 90%;
     height: 40%;
@@ -31,7 +33,7 @@
     
     box-shadow: 5px 5px 5px black;
     
-  }
+  } */
   .logo {
     display: flex;
     flex-direction: column;
@@ -39,7 +41,7 @@
   }
   .freedom {
     border-radius: 4px;
-    background: linear-gradient(to right, #b2c3ca, #4ca2cb, #b7c8cf) !important;
+    background: #00bea6;
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -76,8 +78,51 @@
     right: 0;
   }
 
-  .logo {
+  
+
+  .webPics {
     display: flex;
     flex-direction: column;
     align-items: center;
+
   }
+  .noMoney {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .noMoney img{
+    width:100%;
+    border: 2px solid #00bea6;
+    box-shadow: 10px 10px 10px black;
+  }
+
+  .depressed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+  }
+  .depressed img{
+    width:100%;
+    border: 2px solid #00bea6;
+    box-shadow: 10px 10px 10px black;
+  }
+  .happy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    
+
+  }
+  .happy img{
+    width:100%;
+    border: 2px solid #00bea6;
+    box-shadow: 10px 10px 10px black;
+  }
+
+  
