@@ -1,5 +1,5 @@
-### Important Note:
-# this repo holds the contents of Credit Sharks Front End ONLY (React) please refer to: <a href="https://github.com/davidvaughan86/CreditSharks-LLC-Captstone-FrontandBack-End"</a> for Full Front and Back end Capstone.
+# Important Note:
+### this repo holds the contents of Credit Sharks Front End ONLY (React) please refer to: <a href="https://github.com/davidvaughan86/CreditSharks-LLC-Captstone-FrontandBack-End"</a> for Full Front and Back end Capstone.
 
 ## Creator's Notes
 
