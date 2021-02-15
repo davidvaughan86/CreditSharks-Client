@@ -95,7 +95,7 @@
   .noMoney img{
     width:100%;
     border: 2px solid #00bea6;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.692);
   }
 
   .depressed {
@@ -108,7 +108,7 @@
   .depressed img{
     width:100%;
     border: 2px solid #00bea6;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.692)
   }
   .happy{
     display: flex;
@@ -122,7 +122,7 @@
   .happy img{
     width:100%;
     border: 2px solid #00bea6;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.692);
   }
 
   

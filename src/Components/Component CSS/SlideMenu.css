@@ -21,11 +21,13 @@
   .bm-cross-button {
     height: 24px;
     width: 24px;
+    
   }
   
   /* Color/shape of close button cross */
   .bm-cross {
     background: #bdc3c7;
+    display: none;
   }
 
   /*
@@ -45,8 +47,8 @@
     padding: 2.5em 1.5em 0;
     font-size: 18px;
     margin-right: 40%;
-    border: 1px solid #E5EFF8;
-    border-radius: 150px;
+    border: 5px solid #00bea6;
+    
     width: 71%;
     
     
@@ -59,10 +61,17 @@
   
   /* Wrapper for item list */
   .bm-item-list {
-    color: red;
+    /* color: red; */
     padding: 2.0em;
   }
-  
+  .bm-item-list > a{
+    color: red;
+    text-decoration: none;
+    border: 3px solid #00bea6;
+    box-shadow: 5px 10px 8px #888888;
+    margin: 5px
+
+  }
   /* Individual item */
   .bm-item {
     display: inline-block;

@@ -2,6 +2,8 @@ creditShark{
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: Slant;
+  
 }
 
 
@@ -17,9 +19,9 @@ creditShark{
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 94px;
-  border: 10px solid #E5EFF8;
-  box-shadow: 30px 30px 30px black;
+  
+  border: 3px solid #00bea6;
+  box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.63);
   
 }
 

@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+// import './fonts/SLANT2.TFF'
+// import './fonts/SLANT3.TFF'
 ReactDOM.render(
   <React.StrictMode>
     <App />

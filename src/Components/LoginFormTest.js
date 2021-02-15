@@ -79,8 +79,9 @@ class LoginFormTest extends Component {
         
 render() {
         return (
-            <div className="loginformtest">
-                loginform
+            <div className="LContainer">
+            <div className="logonFrame">
+                Please Sign In
             
             <InputField
             type='text'
@@ -100,6 +101,7 @@ render() {
             disabled={this.state.buttonDisabled}
             onClick={ ( ) => this.LogOn}
             />
+            </div>
             </div>
         )
     }

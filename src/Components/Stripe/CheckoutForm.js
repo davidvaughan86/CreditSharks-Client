@@ -1,5 +1,13 @@
 import React from 'react'
-import {CardElement, useStripe, useElements} from '@stripe/react-stripe-js'
+import {
+  CardElement, 
+  CardNumberElement,
+  CardExpiryElement,
+  CardCvcElement,
+  PaymentRequestButtonElement,
+
+  useStripe, 
+  useElements} from '@stripe/react-stripe-js'
 
 import axios from 'axios';
 
@@ -49,16 +57,27 @@ export const CheckoutForm = () => {
             <br/>
             <br/>
             <br/>
-        <div className="Stripeframe">
+        {/* <div className="Stripeframe"> */}
         <form onSubmit={handleSubmit} style={{maxWidth:400}}> 
-
-        <CardElement style={{input:'20px'}}/>
-        <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
+        <div className="frame">
+        <CardNumberElement options={{style:{base:{fontSize:'20px'}}}}/>
+        <CardExpiryElement options={{style:{base:{fontSize:'20px'}}}}/>
+        <CardCvcElement options={{style:{base:{fontSize:'20px'}}}}/>
         <button>PAY</button>
+        
         </div>
+       
+        
+
+
+        
+        {/* <CardElement options={{style:{base:{fontSize:'20px', height:'50px'}}}}/>
+        <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
+       
+        </div> */}
 
         </form>
-        </div>
+        {/* </div> */}
         </div>
     )
 
