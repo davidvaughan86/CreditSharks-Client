@@ -1,6 +1,6 @@
 
 import './App.css';
-// import {useEffect, useState} from 'react'
+import {helmet} from 'react-helmet'
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,18 +8,19 @@ import {
   Link,
   useHistory
 } from 'react-router-dom'
+
 import Header from './Components/Header'
 import './Components/Component CSS/ProductSlide.css'
 import './Components/Component CSS/HeroPage.css'
 import HeroPage from './Components/HeroPage';
-
+import './config'
 import LeadCapture from './Components/LeadCapture';
 import './Components/Component CSS/LeadCapture.css';
 import ProductSlide from './Components/ProductSlide';
 import {Packages} from './Components/Packages';
 import {FaChevronCircleLeft} from 'react-icons/fa';
 import {FaChevronCircleRight} from 'react-icons/fa';
-import {useState} from 'react';
+import {Component, useState} from 'react';
 import Slide from '@material-ui/core/Slide'
 import MyCart from './Components/MyCart'
 import ContactUs from './Components/ContactUs'
@@ -30,11 +31,16 @@ import Scheduler from './Components/Scheduler'
 import SocialMedia from './Components/SocialMedia'
 import './Components/Component CSS/SocialMedia.css'
 import './Components/Component CSS/SlideMenu.css'
-import Commerce from '@chec/commerce.js'
+import {Observer} from 'mobx-react'
 import StripeContainer from './Components/Stripe/StripeContainer'
-import './Components/Component CSS/StripeContainer.css'
+import LoginFormTest from './Components/LoginFormTest'
+import LoginForm from './Components/LoginForm'
+import inputField from './Components/SubmitButton'
+import './Components/Component CSS/Login.css'
 
-const commerce = new Commerce('pk_test_23168d2cc5642059562235ca960a60d66570c00e15610', true)          
+import SubmitButton from './Components/SubmitButton'
+
+         
 
 
 
@@ -47,6 +53,12 @@ function Arrow(props) {
 
 
 function App() {
+
+    
+        
+
+
+
   // const content = Packages[index];
   const [slideIn, setSlideIn] = useState(true) //changes direction of card exit so it appears to slide across the screen
   const [slideDirection, setSlideDirection]=useState('down') // renders first slide coming down
@@ -90,8 +102,12 @@ function App() {
   <div className="creditShark">
   
   <Switch>
+      
     <Route path='/about' >
       <About />
+    </Route>
+    <Route path='/login'>
+      <LoginFormTest />
     </Route>
       
       <Route path='/scheduler' >
@@ -100,6 +116,10 @@ function App() {
 
     <Route path ='/' exact>
       <HeroPage />              
+    </Route>
+
+    <Route path="/reviews">
+    
     </Route>
       
     <Route path='/contactus'>

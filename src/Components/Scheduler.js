@@ -12,7 +12,7 @@ export default function Scheduler () {
     <div className="calendleyContainer" 
           style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
       <div className="frame">
-            <InlineWidget url="https://calendly.com/thecreditsharks"/>
+            <InlineWidget url="https://calendly.com/creditsharks420"/>
       </div>
       
        

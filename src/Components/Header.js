@@ -9,7 +9,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import SlideMenu from './SlideMenu'
 import {GiSharkJaws} from 'react-icons/gi'
 import {GiSharkFin} from 'react-icons/gi'
-
+import {useHistory} from 'react-router-dom'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -71,8 +71,11 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ButtonAppBar() {
   const classes = useStyles();
+  const history= useHistory();
 
   return (
+
+    
     <div className={classes.root}>
       <AppBar position="static" 
       style={{
@@ -95,7 +98,12 @@ export default function ButtonAppBar() {
             
           </Typography>
           <GiSharkJaws/>
-          <Button color="inheritred">Login</Button>
+          <Button 
+            color="inheritred"
+            onClick={(e) => {
+              history.push('/login')}}
+              >Login
+          </Button>
         </Toolbar>
       </AppBar>
     </div>
