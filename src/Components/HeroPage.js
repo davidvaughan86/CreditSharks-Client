@@ -14,6 +14,7 @@ export default function HeroPage () {
                 <br/>
                 <div className="logo" max-with ='60%'>
                     <img src = {logo} width='100%' />
+                    <h4>WE ATTACK BAD CREDIT</h4>
                     <br/>
                     <Link to={'/leadcapture'} style={{ textDecoration: 'none' }}>
                         <span class="freedom" 

@@ -10,8 +10,9 @@ import {
   useElements} from '@stripe/react-stripe-js'
 
 import axios from 'axios';
-
-
+import '../Component CSS/Receipt.css'
+import Receipt from './CheckoutPForm'
+import PersonalInfo from './CheckoutPForm';
 
 export const CheckoutForm = () => {
     const stripe = useStripe();
@@ -54,6 +55,7 @@ export const CheckoutForm = () => {
 
     return (
         <div className="CheckoutFormContainer">
+          <PersonalInfo />
               <br/>
               <br/>
               <br/>
@@ -62,6 +64,8 @@ export const CheckoutForm = () => {
         <CardElement />
         <button>PAY</button>
         </form>
+        <br/>
+              <br/>
         
         </div>
         </div>

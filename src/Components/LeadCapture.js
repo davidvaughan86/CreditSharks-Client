@@ -157,7 +157,7 @@ export default function LeadCapture() {
                     onSubmit={undefined}
                     padding={15}
                     password={false}
-                    placeholder={"Phone"}
+                    placeholder={"Phone(Optional)"}
                     placeholderColor={"#aaa"}
                     radius={8}
                     // textColor={"#333"}

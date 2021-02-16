@@ -94,7 +94,7 @@ render() {
                     
             />
             <InputField
-           type='text'
+           type='password'
            placeholder='Password'
            value={this.state.password ? this.state.password: ''}
            onChange={(val) => this.setInputValue('password', val)}

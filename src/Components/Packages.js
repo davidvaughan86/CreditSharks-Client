@@ -8,19 +8,19 @@ import image6 from '../GreatWhiteShark.png';
 
 
 export const Packages = [
-  {
-    backgroundColor: "#E5EFF8",
-    title: "Credit Sharks - Beta Coruse",
-    description: 'Coming Soon',
-    url: image1,
-    price: "$0"
-  },
+//   {
+//     backgroundColor: "#E5EFF8",
+//     title: "Credit Sharks - Beta Coruse",
+//     description: 'Coming Soon',
+//     url: image1,
+//     price: "$0"
+//   },
   { backgroundColor: "#E5EFF8",
     title: "Free Consultation - Contact Us Today!",
     description: "Free consultation",
     url: image2,
     price: '$0',
-    special1: 'Please Schedule Here',
+    special1: 'Please Schedule Below',
     special2: 'https://calendly.com/thecreditsharks'
 },{ 
     backgroundColor: "#d4af37", 

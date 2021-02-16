@@ -1,14 +1,19 @@
+
 import React from 'react'
+import man from './man.jpg'
 
 export default function MembersOnly () {
     return (
 
         <div className="membersContainer">
-            <div className="frame">
-                <h1>you are in the members only section</h1>
-                <h4>what would you like to do</h4>
-                <button>IMPORT CREDIT SCORE</button>
-                <button>IMPORT AGENT TODO LIST</button>
+            <div className="userHome"style={{display:'flex', flexDirection:'column', maxWidth:'30%'}}>
+                <h1>Hello David</h1>
+                
+                <a href='https://www.identityiq.com'>Get Started Here First</a>
+                <button>Orders</button>
+                <button>Bookings</button>
+                <img src={man}style={{width:'350%'}}/>
+               
             </div>
         </div>
     )

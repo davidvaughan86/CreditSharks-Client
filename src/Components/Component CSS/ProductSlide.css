@@ -43,7 +43,7 @@
  
   .arrowR svg:first-child {
     opacity: 80%;
-    height: 60px;
+    height: 40px;
     width: 60px;
     cursor: pointer;
     color: #9F0000;
@@ -52,7 +52,7 @@
   }
   .arrowL svg:first-child {
     opacity: 80%;
-    height: 60px;
+    height: 40px;
     width: 60px;
     cursor: pointer;
     color: #9F0000;

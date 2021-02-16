@@ -41,7 +41,7 @@ import './Components/Component CSS/CheckoutForm.css'
 import SubmitButton from './Components/SubmitButton'
 import MembersOnly from './Components/Members'
          
-
+import './Components/Component CSS/Receipt.css'
 
 
 function Arrow(props) {
@@ -143,9 +143,8 @@ function App() {
                         addToCart={addToCart}/>
         </div>
       </Slide>
-      <br/>
-      <br/>
-      <br/>
+      
+      
         <div className="grid-arrows">
           <div className="arrowL">
           <Arrow
