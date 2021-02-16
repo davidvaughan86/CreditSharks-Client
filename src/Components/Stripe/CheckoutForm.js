@@ -54,31 +54,17 @@ export const CheckoutForm = () => {
 
     return (
         <div className="CheckoutFormContainer">
-            <br/>
-            <br/>
-            <br/>
-        {/* <div className="Stripeframe"> */}
-        <form onSubmit={handleSubmit} style={{maxWidth:400}}> 
-        <div className="frame">
-        <CardNumberElement options={{style:{base:{fontSize:'20px'}}}}/>
-        <CardExpiryElement options={{style:{base:{fontSize:'20px'}}}}/>
-        <CardCvcElement options={{style:{base:{fontSize:'20px'}}}}/>
+              <br/>
+              <br/>
+              <br/>
+          <div >
+        <form onSubmit={handleSubmit}>
+        <CardElement />
         <button>PAY</button>
+        </form>
         
         </div>
-       
-        
-
-
-        
-        {/* <CardElement options={{style:{base:{fontSize:'20px', height:'50px'}}}}/>
-        <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
-       
-        </div> */}
-
-        </form>
-        {/* </div> */}
         </div>
     )
 
-    }
+   }

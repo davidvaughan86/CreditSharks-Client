@@ -34,12 +34,12 @@ import './Components/Component CSS/SlideMenu.css'
 import {Observer} from 'mobx-react'
 import StripeContainer from './Components/Stripe/StripeContainer'
 import LoginFormTest from './Components/LoginFormTest'
-import LoginForm from './Components/LoginForm'
+import LoginForm from './Components/LoginFormTest'
 import inputField from './Components/SubmitButton'
 import './Components/Component CSS/Login.css'
 import './Components/Component CSS/CheckoutForm.css'
 import SubmitButton from './Components/SubmitButton'
-
+import MembersOnly from './Components/Members'
          
 
 
@@ -108,6 +108,9 @@ function App() {
     </Route>
     <Route path='/login'>
       <LoginFormTest />
+    </Route>
+    <Route path="/members">
+    <MembersOnly />
     </Route>
       
       <Route path='/scheduler' >

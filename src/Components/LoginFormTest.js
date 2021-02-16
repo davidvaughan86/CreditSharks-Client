@@ -4,6 +4,8 @@ import UserStore from './UserStore'
 import React , {Component} from 'react'
 import LogOn from './LogOn'
 import { render } from '@testing-library/react'
+import { withRouter } from 'react-router-dom';
+
 
 class LoginFormTest extends Component {
     constructor(props) {
@@ -16,12 +18,9 @@ class LoginFormTest extends Component {
         this.setInputValue = this.setInputValue.bind(this);
     };
 
-
-    
-
     setInputValue(property, val) {
         val = val.trim();
-        if(val.length > 12){
+        if(val.length > 30){
             return;
         }
         this.setState({[property]:val
@@ -59,11 +58,15 @@ class LoginFormTest extends Component {
 
             })
         });
+        console.log('test')
 
         let result = await res.json();
-        if (result && result.success) {
+    
+        if (result && result.id) {
             UserStore.isLoggedIn = true;
             UserStore.username = result.username
+            const { history } = this.props;
+            if(history) history.push('/members');
         }
         else if (result && result.success === false) {
             this.resetForm();
@@ -99,7 +102,7 @@ render() {
             <SubmitButton 
             text='Login'
             disabled={this.state.buttonDisabled}
-            onClick={ ( ) => this.LogOn}
+            onClick={ () => this.LogOn()}
             />
             </div>
             </div>
@@ -107,4 +110,4 @@ render() {
     }
 }
 
-export default LoginFormTest
+export default withRouter(LoginFormTest);

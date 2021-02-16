@@ -9427,7 +9427,7 @@ react-app-polyfill@^2.0.0:
 
 react-bootstrap-buttons@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.npmjs.org/react-bootstrap-buttons/-/react-bootstrap-buttons-1.0.0.tgz"
+  resolved "https://registry.yarnpkg.com/react-bootstrap-buttons/-/react-bootstrap-buttons-1.0.0.tgz#6115aa9059b21d2f1a2faab8741a7a943330ff87"
   integrity sha512-gM5C5YLmP9Wd5hKtHmFKku68CqVtyySlZb2yVMIZaQ//eKjGFCGO2EBfoRotaGRPePvhZ2XlaV+BiBDWBOHRjg==
   dependencies:
     classnames "^2.2.5"
