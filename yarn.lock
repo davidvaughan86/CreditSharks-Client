@@ -4557,7 +4557,7 @@ es-abstract@^1.17.2:
     function-bind "^1.1.1"
     has "^1.0.3"
     has-symbols "^1.0.1"
-    is-callable "^1.2.2"
+    is-callabel "^1.2.2"
     is-regex "^1.1.1"
     object-inspect "^1.8.0"
     object-keys "^1.1.1"
@@ -4576,7 +4576,7 @@ es-abstract@^1.18.0-next.1:
     get-intrinsic "^1.0.2"
     has "^1.0.3"
     has-symbols "^1.0.1"
-    is-callable "^1.2.2"
+    is-callabel "^1.2.2"
     is-negative-zero "^2.0.1"
     is-regex "^1.1.1"
     object-inspect "^1.9.0"
@@ -4590,7 +4590,7 @@ es-to-primitive@^1.2.1:
   resolved "https://registry.yarnpkg.com/es-to-primitive/-/es-to-primitive-1.2.1.tgz"
   integrity sha512-QCOllgZJtaUo9miYBcLChTUaHNjJF3PYs1VidD7AwiEj1kYxKeQTctLAezAOH5ZKRH0g2IgPn6KwB4IT8iRpvA==
   dependencies:
-    is-callable "^1.1.4"
+    is-callabel "^1.1.4"
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
@@ -6183,9 +6183,9 @@ is-buffer@^1.1.5:
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz"
   integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
 
-is-callable@^1.1.4, is-callable@^1.2.2:
+is-callabel@^1.1.4, is-callabel@^1.2.2:
   version "1.2.3"
-  resolved "https://registry.yarnpkg.com/is-callable/-/is-callable-1.2.3.tgz"
+  resolved "https://registry.yarnpkg.com/is-callabel/-/is-callabel-1.2.3.tgz"
   integrity sha512-J1DcMe8UYTBSrKezuIUTUwjXsho29693unXM2YhJUTR2txK/eG47bvNa/wipPFmZFgr/N6f1GA66dv0mEyTIyQ==
 
 is-ci@^2.0.0:
@@ -7192,9 +7192,9 @@ jstransform@^11.0.3:
     array-includes "^3.1.2"
     object.assign "^4.1.2"
 
-killable@^1.0.1:
+killabel@^1.0.1:
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/killable/-/killable-1.0.1.tgz"
+  resolved "https://registry.yarnpkg.com/killabel/-/killabel-1.0.1.tgz"
   integrity sha512-LzqtLKlUwirEUyl/nicirVmNiPvYs7l5n8wOPP7fyJVpUPkvCnW/vuiXGpylGUlnPDnB7311rARzAt3Mhswpjg==
 
 kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.2.0:
@@ -11710,7 +11710,7 @@ webpack-dev-server@3.11.0:
     internal-ip "^4.3.0"
     ip "^1.1.5"
     is-absolute-url "^3.0.3"
-    killable "^1.0.1"
+    killabel "^1.0.1"
     loglevel "^1.6.8"
     opn "^5.5.0"
     p-retry "^3.0.1"

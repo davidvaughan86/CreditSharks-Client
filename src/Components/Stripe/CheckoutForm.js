@@ -7,11 +7,12 @@ import {
   useElements} from '@stripe/react-stripe-js'
 import {useHistory} from 'react-router-dom'
 import axios from 'axios';
-import '../Component CSS/Receipt.css'
 
-import PersonalInfo from './PersonalInfo';
+import Registration from './Registration'
 
-export const CheckoutForm = () => {
+// import PersonalInfo from './PersonalInfo';
+
+export const CheckoutForm = (props) => {
     const stripe = useStripe();
     const elements = useElements();
     const history= useHistory()
@@ -54,18 +55,26 @@ export const CheckoutForm = () => {
 
     return (
         <div className="CheckoutFormContainer">
-          <PersonalInfo />
+          <Registration />
               <br/>
               
           <div >
+            <h4>Purchase your Package</h4>
         <form onSubmit={handleSubmit}>
         <CardElement
        
       />
         <button className="pay">PAY</button>
+        
         </form>
+        
+        <img src={props.cart[0].url} alt={props.cart[0].title}/>
+        <p>{props.cart[0].title}</p>
+        <p>{props.cart[0].description}</p>
+        <button onClick={(e) => {
+          history.push('/products')}}>
+        Select a different Package</button>
         <br/>
-              <br/>
         
         </div>
         </div>

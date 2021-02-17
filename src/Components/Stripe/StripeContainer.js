@@ -8,12 +8,12 @@ import {CheckoutForm} from './CheckoutForm'
 
 
 
-export default function Stripe () {
+export default function Stripe (props) {
     const stripeTestPromise= loadStripe('pk_test_51IGFn2AqeHzkXuKGf9dQWsKmvh5LBub4xPBSrwfYDrfS30SlGrHerouKQjHff0XcS34fIMWkCxgpjjeMaSxs987q00wjAP9AkW')
 return(
 
     <Elements stripe={stripeTestPromise}>
-        <CheckoutForm />
+        <CheckoutForm cart={props.cart}/>
     </Elements>
 
 

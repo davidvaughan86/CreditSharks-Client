@@ -2,7 +2,7 @@ import InputField from './InputField'
 import SubmitButton from './SubmitButton'
 import UserStore from './UserStore'
 import React , {Component} from 'react'
-import LogOn from './LogOn'
+
 import { render } from '@testing-library/react'
 import { withRouter } from 'react-router-dom';
 import yard from './Yardsign.jpg'

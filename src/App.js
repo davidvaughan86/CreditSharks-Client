@@ -41,7 +41,7 @@ import './Components/Component CSS/CheckoutForm.css'
 import SubmitButton from './Components/SubmitButton'
 import MembersOnly from './Components/Members'
 import './Components/Component CSS/Members.css'       
-import './Components/Component CSS/Receipt.css'
+import './Components/Component CSS/Registration.css'
 import './Components/Component CSS/PersonalInfo.css'
 
 function Arrow(props) {
@@ -132,7 +132,7 @@ function App() {
       <SocialMedia />
     </Route>
 
-    <Route path = '/leadcapture'>
+    <Route path = '/leadcapture' exact>
       <LeadCapture  />
     </Route>
       
@@ -165,7 +165,7 @@ function App() {
         <MyCart cart={cart} />
     </Route> 
     <Route path="/checkout">
-    <StripeContainer />
+    <StripeContainer cart={cart}/>
     </Route>
 
   </Switch>
