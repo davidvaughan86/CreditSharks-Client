@@ -4,3 +4,22 @@
     align-items: center;
 }
 
+.dframe {
+    box-sizing: border-box;
+    border-radius: 64px;
+    width: 90%;
+    overflow: scroll;
+    padding: 5%;
+    height: 89vh;
+    
+    
+    background-color: #E5EFF8;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border: 3px solid #00bea6;
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.63);
+    
+  }
+  

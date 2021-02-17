@@ -7,7 +7,7 @@ export default function SocialMedia () {
     return (
         <div className="socialMediaContainer">
 
-        <div className="frame">
+        <div className="dframe">
         <br/>
         
         <div className="socialmedialogo" max-width='70%'>
@@ -16,7 +16,7 @@ export default function SocialMedia () {
             </div>
             <br/>
             <br/>
-            <br/>
+            
             <div style={{backGroundColor:'black', border:'5px solid #00bea6', borderRadius:'60px', display:'flex', flexDirection:'column', alignItems:'center'}}>
             <div className="instagram">
                 <SocialIcon url="http://twitter.com/creditsharks420" />
@@ -25,7 +25,7 @@ export default function SocialMedia () {
             </div>
             
             <br/>
-            <br/>
+            
             <div style={{backGroundColor:'black', border:'5px solid #00bea6', borderRadius:'60px', display:'flex', flexDirection:'column', alignItems:'center'}}>
             <div className="facebook">
                 <SocialIcon url="http://facebook.com/creditsharks420" />
@@ -33,7 +33,7 @@ export default function SocialMedia () {
             </div>
             </div>
             <br/>
-            <br/>
+            
             <div style={{backGroundColor:'black', border:'5px solid #00bea6', borderRadius:'60px', display:'flex', flexDirection:'column', alignItems:'center'}}>
             <div className="twitter">
             <SocialIcon url="http://instagram.com/creditsharks420" />
@@ -41,8 +41,7 @@ export default function SocialMedia () {
             </div>
             </div>
             
-            <br/>
-            <br/>
+            
             
             
 

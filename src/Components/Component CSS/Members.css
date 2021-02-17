@@ -1,0 +1,14 @@
+.membersContainer {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.userHome img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.726);
+}
+

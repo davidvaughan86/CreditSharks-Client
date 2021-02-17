@@ -25,7 +25,7 @@ export default function MyCart (props) {
                             
 
                             <div className="stripe">
-                                <button type="button" 
+                                <button className="checkBtn"type="button" 
                                 onClick={(e) => {
                                     history.push('/checkout')
                                 }}
@@ -36,9 +36,25 @@ export default function MyCart (props) {
                                 >
                                     Go To Check Out
                                 </button>
-                                <h4>{props.cart[0].description}</h4>
+                                <button className="backBtn"type="button" 
+                                onClick={(e) => {
+                                    history.push('/products')
+                                }}
+                                role="link" style={{
+                                    border: '2px solid black',
+                                    borderRadius: '20px'
+                                }}
+                                >
+                                    BACK
+                                </button>
+                               
+                                
 
                             </div>
+                            <div className="pDescription">
+                                <h4>{props.cart[0].description}
+                                </h4>
+                                </div>
                         </div>    
                     </div>
 

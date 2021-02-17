@@ -1,23 +1,20 @@
 import React from 'react'
 import {
   CardElement, 
-  CardNumberElement,
-  CardExpiryElement,
-  CardCvcElement,
-  PaymentRequestButtonElement,
+  
 
   useStripe, 
   useElements} from '@stripe/react-stripe-js'
-
+import {useHistory} from 'react-router-dom'
 import axios from 'axios';
 import '../Component CSS/Receipt.css'
-import Receipt from './CheckoutPForm'
-import PersonalInfo from './CheckoutPForm';
+
+import PersonalInfo from './PersonalInfo';
 
 export const CheckoutForm = () => {
     const stripe = useStripe();
     const elements = useElements();
-
+    const history= useHistory()
 
     const handleSubmit = async(event) => {
         event.preventDefault();
@@ -41,8 +38,10 @@ export const CheckoutForm = () => {
             );
             console.log("Stripe 35 | data", response.data.success);
             if (response.data.success) {
+              
               console.log("CheckoutForm.js 25 | payment successful!");
             }
+            
           } catch (error) {
             console.log("CheckoutForm.js 28 | ", error);
           }
@@ -57,12 +56,13 @@ export const CheckoutForm = () => {
         <div className="CheckoutFormContainer">
           <PersonalInfo />
               <br/>
-              <br/>
-              <br/>
+              
           <div >
         <form onSubmit={handleSubmit}>
-        <CardElement />
-        <button>PAY</button>
+        <CardElement
+       
+      />
+        <button className="pay">PAY</button>
         </form>
         <br/>
               <br/>

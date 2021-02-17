@@ -5,7 +5,7 @@ import React , {Component} from 'react'
 import LogOn from './LogOn'
 import { render } from '@testing-library/react'
 import { withRouter } from 'react-router-dom';
-
+import yard from './Yardsign.jpg'
 
 class LoginFormTest extends Component {
     constructor(props) {
@@ -88,7 +88,7 @@ render() {
             
             <InputField
             type='text'
-            placeholder='Username'
+            placeholder='Email'
             value={this.state.username ? this.state.username: ''}
             onChange={(val) => this.setInputValue('username', val)}
                     
@@ -105,6 +105,8 @@ render() {
             onClick={ () => this.LogOn()}
             />
             </div>
+            <br/>
+            <img src={yard} style={{width:"90%", border:'2px solid #00bea6', boxShadow:"5px 5px 5px black"}}/>
             </div>
         )
     }

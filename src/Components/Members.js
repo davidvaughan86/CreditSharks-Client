@@ -2,6 +2,7 @@
 import React from 'react'
 import man from './man.jpg'
 
+
 export default function MembersOnly () {
     return (
 
@@ -12,7 +13,7 @@ export default function MembersOnly () {
                 <a href='https://www.identityiq.com'>Get Started Here First</a>
                 <button>Orders</button>
                 <button>Bookings</button>
-                <img src={man}style={{width:'350%'}}/>
+                <img src={man}style={{width:'300%', border:'2px solid #00bea6'}}/>
                
             </div>
         </div>

@@ -40,9 +40,9 @@ import './Components/Component CSS/Login.css'
 import './Components/Component CSS/CheckoutForm.css'
 import SubmitButton from './Components/SubmitButton'
 import MembersOnly from './Components/Members'
-         
+import './Components/Component CSS/Members.css'       
 import './Components/Component CSS/Receipt.css'
-
+import './Components/Component CSS/PersonalInfo.css'
 
 function Arrow(props) {
   const { direction, clickFunction} = props;

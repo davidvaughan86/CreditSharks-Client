@@ -1,0 +1,11 @@
+.PIContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.personal {
+    border: 1px solid #00bea6;
+    margin: 5%;
+}

@@ -42,6 +42,8 @@ export default function LeadCapture() {
         <div className='leadPageContainer' max-width = '30%'>
             
                 <form className="frame" onSubmit={sendEmail}>
+                    <h4>We need just a little info</h4>
+                    <span>How should we address you?</span>
                     <br/>
                     <br/>
                     <br/>

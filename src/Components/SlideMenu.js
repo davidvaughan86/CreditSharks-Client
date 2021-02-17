@@ -1,6 +1,6 @@
-import {stack as Menu } from 'react-burger-menu'
+
 import React from 'react'
-import logo from './CSlogo.png'
+import {stack as Menu } from 'react-burger-menu'
 import { withRouter } from 'react-router-dom';
 
 class SlideMenu extends React.Component {
@@ -33,6 +33,7 @@ class SlideMenu extends React.Component {
           history.push('/about')}}>About Us</a>
         
       </Menu>
+      
     );
   }
 }
