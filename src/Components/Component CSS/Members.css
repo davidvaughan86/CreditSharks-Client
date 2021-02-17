@@ -12,3 +12,74 @@
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.726);
 }
 
+.orders {
+	box-shadow: 3px 4px 0px 0px #1c8a7b;
+	background:linear-gradient(to bottom, #00bea5 5%, #4be3cf 100%);
+	background-color:#00bea5;
+	border-radius:18px;
+	border:1px solid #00bea5;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Impact;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #17bda7;
+}
+hover 
+{
+	background:linear-gradient(to bottom, #4be3cf 5%, #00bea5 100%);
+	background-color:#4be3cf;
+}
+active {
+	position:relative;
+	top:1px;
+}
+.booking {
+	box-shadow: 3px 4px 0px 0px #1c8a7b;
+	background:linear-gradient(to bottom, #00bea5 5%, #4be3cf 100%);
+	background-color:#00bea5;
+	border-radius:18px;
+	border:1px solid #00bea5;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Impact;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #17bda7;
+    margin: 1%
+}
+.booking:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+.booking:active {
+	position:relative;
+    top:1px;
+}
+.startHere {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Impact;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+}
+.startHere :hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+ .startHere :active {
+	position:relative;
+	top:1px;
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './CSlogo.png'
+
 
 export default function About () {
     
@@ -8,8 +8,8 @@ export default function About () {
         <div className="aboutContainer">
         <div className="frame" max-width='60%'>
             <h1> ABOUT US</h1>
-            <img src={logo} width='100%'/>
-            <h3>At Credit Sharks we believe everyone deserves Financial Freedom.
+            <img src={'/images/theShark.webp'} width='100%'style={{border:'1px solid #00bea6', borderRadius:'30px'}}/>
+            <h3>Meet the founder of Credit Sharks by Sandifer Corporation, Troy Sandifer. At Credit Sharks we believe everyone deserves Financial Freedom. 
             </h3>
             <div>
             

@@ -57,14 +57,14 @@
     margin: 1%;
 }
     
-/* &:hover {
+.checkBtn:hover {
 	background:linear-gradient(to bottom, #4be3cf 5%, #00bea5 100%);
 	background-color:#4be3cf;
 }
- &:active {
+.cehckBtn:active {
 	position:relative;
 	top:1px;
-} */
+}
  .pDescription {
      display: flex;
      flex-direction: column;

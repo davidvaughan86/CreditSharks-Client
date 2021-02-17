@@ -79,9 +79,9 @@ export default function ButtonAppBar() {
     <div className={classes.root}>
       <AppBar position="static" 
       style={{
-            backgroundColor: '#9F0000', 
+            backgroundColor: '#e2e2e2', 
             color: 'black',
-            boxShadow: '2px 2px 2px 2px'
+            boxShadow: '1px 1px'
             }}
       
       >

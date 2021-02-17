@@ -15,7 +15,7 @@
   
   /* Color/shape of burger icon bars on hover*/
   .bm-burger-bars-hover {
-    background: #a90000;
+    background: #ffffff00;
   }
   
   .bm-cross-button {
@@ -46,8 +46,9 @@
     background: #E5EFF8;
     padding: 2.5em 1.5em 0;
     font-size: 18px;
-    margin-right: 40%;
+   
     border: 5px solid #00bea6;
+    border-radius: 30px;
     
     width: 71%;
     
@@ -68,6 +69,7 @@
     color: red;
     text-decoration: none;
     border: 3px solid #00bea6;
+    border-radius: 10px;
     box-shadow: 5px 10px 8px #888888;
     margin: 5px
 

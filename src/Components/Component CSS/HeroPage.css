@@ -6,55 +6,29 @@
 }
 
 
-/* .Heroframe {
-  box-sizing: border-box;
-  width: 90%;
-  
-  padding: 5%;
-  overflow: hidden;
-  
-  background-color: #E5EFF8;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 94px;
-  border: 10px solid #E5EFF8;
-  box-shadow: 10px 10px 10px black;
-  
-} */
-  /* .frameVideo {
-    box-sizing: border-box;
-    width: 90%;
-    height: 40%;
-    overflow: hidden;
-    background-color: #d4cece;
-    border-radius: 167px;
-    border: 13px solid #9F0000;
-    
-    box-shadow: 5px 5px 5px black;
-    
-  } */
+
   .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .freedom {
-    border-radius: 30px;
-    background: #00bea6;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 16px;
-    padding: 18px;
-    width: 255px;
-    transition: all 0.4s;
+    box-shadow: 3px 4px 0px 0px #1c8a7b;
+    background:linear-gradient(to bottom, #00bea5 5%, #4be3cf 100%);
+    background-color:#00bea5;
+    border-radius:18px;
+    border:1px solid #00bea5;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:7px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #17bda7;
+    margin: 1%;
     cursor: pointer;
-    
     display: flex; 
-    
-    
   }
   .freedom span {
     cursor: pointer;

@@ -106,7 +106,7 @@ render() {
             />
             </div>
             <br/>
-            <img src={yard} style={{width:"90%", border:'2px solid #00bea6', boxShadow:"5px 5px 5px black"}}/>
+            <img src={yard} style={{width:"90%", border:'2px solid #00bea6', boxShadow:"5px 5px 5px black", borderRadius:'30px'}}/>
             </div>
         )
     }
