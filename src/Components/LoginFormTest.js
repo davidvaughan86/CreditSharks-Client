@@ -46,14 +46,14 @@ class LoginFormTest extends Component {
     
         try{
 
-            let res = await fetch('/login', {
+            let res = await fetch('/api/login/', {
             method: 'post',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                username: this.state.username,
+                email: this.state.username,
                 password: this.state.password
 
             })

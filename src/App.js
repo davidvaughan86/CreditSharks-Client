@@ -51,18 +51,7 @@ function Arrow(props) {
 
 
 function App() {
-  function addEventListenerList(list, event, fn) {
-    for (var i = 0, len = list.length; i < len; i++) {
-        list[i].addEventListener(event, fn, false);
-    }
-}
-
-var navitems = document.getElementsByClassName('nav-item');
-addEventListenerList(navitems, 'click', hidemenu); 
-
-function hidemenu() {
-    document.getElementById("nav-trigger").checked = false; 
-}
+  
     
         
 
