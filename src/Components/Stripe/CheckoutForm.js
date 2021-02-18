@@ -72,6 +72,7 @@ export const CheckoutForm = (props) => {
         
         <img src={props.cart[0].url} alt={props.cart[0].title}/>
         <p>{props.cart[0].title}</p>
+        <p>{props.cart[0].price}</p>
         <p>{props.cart[0].description}</p>
         <button className="update" onClick={(e) => {
           history.push('/products')}}>

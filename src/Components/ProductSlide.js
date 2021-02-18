@@ -50,14 +50,14 @@ export default function ProductSlide(props) {
                     handleClick()}}/>
                 
                 <h3>{title}</h3>
+                <h5>{price}</h5>
                 
                     <p>{description}</p>
                     <p>{special1}</p>
                     <p onClick ={(e) => {
-                        history.push('/scheduler')
-                    
+                        history.push('/scheduler')                    
                     }}>{special2}</p>
-                    <h5>{price}</h5>
+                    
                     
                 
                 

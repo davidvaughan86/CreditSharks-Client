@@ -31,7 +31,7 @@ const onSubmit = async (e) => {
 }
 catch(e) {
     
-    setMessage('Hmm, something didnt quite work. Try again.')
+    setMessage('')
 }
 }
 

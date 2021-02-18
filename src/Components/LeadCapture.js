@@ -14,13 +14,9 @@ export default function LeadCapture() {
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
 
-    // const handleClick=() => {
-    //     props.registerLead(props)
-    //     history.push('/products')
-    // }
+  
     const handleClick =() => {
-        
-        history.push('/products')
+       history.push('/products')
     }
 
   function sendEmail(e) {
@@ -40,7 +36,7 @@ export default function LeadCapture() {
         
         <div className='leadPageContainer' max-width = '30%'>
             
-                <form className="frame" onSubmit={sendEmail, resetForm()}>
+                <form className="frame" onSubmit={sendEmail}>
                     <h4>We need just a little info</h4>
                     <span>How should we address you?</span>
                     <br/>
