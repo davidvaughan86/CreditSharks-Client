@@ -55,25 +55,27 @@ export const CheckoutForm = (props) => {
 
     return (
         <div className="CheckoutFormContainer">
+          <img className="shopping"src='./images/shopping.jpg'style={{border:'2px solid #00bea6', borderRadius: '30px', width:"80%"}}/>
           <Registration />
               <br/>
               
           <div >
-            <h4>Purchase your Package</h4>
+            <h4>Confirm your selection below</h4>
         <form onSubmit={handleSubmit}>
         <CardElement
        
       />
-        <button className="pay">PAY</button>
+      <br/>
+        <button className="paying">Purchase</button>
         
         </form>
         
         <img src={props.cart[0].url} alt={props.cart[0].title}/>
         <p>{props.cart[0].title}</p>
         <p>{props.cart[0].description}</p>
-        <button onClick={(e) => {
+        <button className="update" onClick={(e) => {
           history.push('/products')}}>
-        Select a different Package</button>
+        Wait, go back!</button>
         <br/>
         
         </div>

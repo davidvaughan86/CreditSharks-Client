@@ -20,7 +20,7 @@ export const Packages = [
     description: "Free consultation",
     url: image2,
     price: '$0',
-    special1: <a href="https://calendly.com/thecreditsharks">Book Here</a>,
+    special1: <a href="https://calendly.com/creditsharks420">Book Here</a>,
     
 },{ 
     backgroundColor: "#d4af37", 

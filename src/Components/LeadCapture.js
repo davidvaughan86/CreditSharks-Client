@@ -1,26 +1,24 @@
 import React from 'react'
-import {Input} from '@material-ui/core'
-import Button from '@material-ui/core/Button'
-import {Link} from 'react-router-dom'
-import {MenuItem} from '@material-ui/core'
-import {useHistory} from 'react-router-dom'   
-import logo from './CSlogo.png'    
 import {useState} from 'react'
+import {Input} from '@material-ui/core'
+import {useHistory} from 'react-router-dom'   
 import emailjs from 'emailjs-com'
+import{ init } from 'emailjs-com';
+init("user_sa7Oug4IuHerMJnhC6CCX");
 
 
 export default function LeadCapture() {
     const history = useHistory()
-    // const [name, setName] = useState('')
-    // const [lastName, setLastName] = useState('')
-    // const [email, setEmail] = useState('')
-    // const [phone, setPhone] = useState('')
+    const [name, setName] = useState('')
+    const [lastName, setLastName] = useState('')
+    const [email, setEmail] = useState('')
+    const [phone, setPhone] = useState('')
 
     // const handleClick=() => {
     //     props.registerLead(props)
     //     history.push('/products')
     // }
-    const handleClick=() => {
+    const handleClick =() => {
         
         history.push('/products')
     }
@@ -28,12 +26,13 @@ export default function LeadCapture() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_ppysl3c', 'template_x3lq2mf', e.target, 'user_sa7Oug4IuHerMJnhC6CCX')
+    emailjs.sendForm('service_ejl5309', 'template_leadcapture', e.target, 'user_sa7Oug4IuHerMJnhC6CCX')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
+      e.target.reset()
   }
     
 
@@ -41,7 +40,7 @@ export default function LeadCapture() {
         
         <div className='leadPageContainer' max-width = '30%'>
             
-                <form className="frame" onSubmit={sendEmail}>
+                <form className="frame" onSubmit={sendEmail, resetForm()}>
                     <h4>We need just a little info</h4>
                     <span>How should we address you?</span>
                     <br/>
@@ -68,11 +67,12 @@ export default function LeadCapture() {
                     placeholder={"First Name"}
                     placeholderColor={"#aaa"}
                     radius={8}
-                    // textColor={"#333"}
-                    // value={name}
-                    // onChange={(e) =>{
-                    // setName(e.target.value)
-                    // }}
+                    textColor={"#333"}
+                    name="name"
+                    value={name}
+                    onChange={(e) =>{
+                    setName(e.target.value)
+                    }}
                     />
                     <br/>
                     <br/>
@@ -99,11 +99,12 @@ export default function LeadCapture() {
                     placeholder={"Last Name"}
                     placeholderColor={"#aaa"}
                     radius={8}
-                    // textColor={"#333"}
-                    // value={lastName}
-                    // onChange = {(e) => {
-                    //     setLastName(e.target.value)
-                    // }}
+                    textColor={"#333"}
+                    name="lastName"
+                    value={lastName}
+                    onChange = {(e) => {
+                        setLastName(e.target.value)
+                    }}
                     />
                     <br/>
                     <br/>
@@ -130,11 +131,12 @@ export default function LeadCapture() {
                     placeholder={"Email"}
                     placeholderColor={"#aaa"}
                     radius={8}
-                    // textColor={"#333"}
-                    // value={email}
-                    // onChange={(e) => {
-                    //     setEmail(e.target.value)
-                    // }}
+                    textColor={"#333"}
+                    name="email"
+                    value={email}
+                    onChange={(e) => {
+                        setEmail(e.target.value)
+                    }}
                     />
                     <br/>
                     <br/>
@@ -162,17 +164,19 @@ export default function LeadCapture() {
                     placeholder={"Phone(Optional)"}
                     placeholderColor={"#aaa"}
                     radius={8}
-                    // textColor={"#333"}
-                    // value={phone}
-                    // onChange={(e) => {
-                    //     setPhone(e.target.value)
-                    // }}
+                    textColor={"#333"}
+                    name="phone"
+                    value={phone}
+                    onChange={(e) => {
+                        setPhone(e.target.value)
+                    }}
 
                     />
-                    <div className='submit' max-width ='100%'>
-                            <img src ={logo} width='200px' onClick={(e) => {
-                            handleClick()
-                            }}/>
+                    <br/>
+                    <div style={{display:'flex', flexDirection:'row', marginLeft:'12%'}}>
+                            <button className="submit"type="submit">Submit</button>
+                            <button onClick={(e) => {
+                                handleClick()}} className="paying">Next</button>
                             
                         </div>
                     

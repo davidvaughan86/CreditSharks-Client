@@ -6,7 +6,7 @@ import React , {Component} from 'react'
 import { render } from '@testing-library/react'
 import { withRouter } from 'react-router-dom';
 import yard from './Yardsign.jpg'
-
+import login from './loggingin.jpg'
 class LoginFormTest extends Component {
     constructor(props) {
     super(props)
@@ -106,7 +106,8 @@ render() {
             />
             </div>
             <br/>
-            <img src={yard} style={{width:"90%", border:'2px solid #00bea6', boxShadow:"5px 5px 5px black", borderRadius:'30px'}}/>
+            
+            <img src={login} style={{width:"90%", border:'2px solid #00bea6', boxShadow:"5px 5px 5px black", borderRadius:'30px'}}/>
             </div>
         )
     }

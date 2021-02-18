@@ -3,7 +3,7 @@ import {useState} from 'react'
 import axios from 'axios'
 
 // import axios
-export default function Registeration (props) {
+export default function Registration (props) {
     const [userName ,setUserName] = useState('')
     const [password ,setPassword] = useState('')
     const [lastName, setLastName] = useState('')
@@ -27,11 +27,11 @@ const onSubmit = async (e) => {
     
     console.log(res)
     props.doRegistration()
-    setMessage('')
+    setMessage('Successfully Registered! You can now log in to membership services. Please continue with your purchse below.')
 }
 catch(e) {
     
-    setMessage('invalid information. Please double check or first purchase a pacakge to register.')
+    setMessage('Hmm, something didnt quite work. Try again.')
 }
 }
 
@@ -42,7 +42,7 @@ return (
     <section className="registration">
         <div>
             <form onSubmit={onSubmit}className="registerForm">
-                <h1>Lets get you registered</h1>
+                <h1>Great choice! Lets get you registered</h1>
                 {message && <h3>{message}</h3>}
                 <label>
                     <input 
@@ -71,7 +71,7 @@ return (
                     value={password}
                     onChange={(e) => {
                         setPassword(e.target.value)}}/>
-                <input type="submit"/>              
+                <button className="submit" type="submit">Submit</button>         
                 </label>
                 
             </form>

@@ -1,21 +1,30 @@
 
-import './App.css';
-import {helmet} from 'react-helmet'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  useHistory
-} from 'react-router-dom'
-
-import Header from './Components/Header'
+ } 
+ from 'react-router-dom'
+import './config'
+import './Components/Component CSS/LeadCapture.css';
+import './Components/Component CSS/About.css'
+import './Components/Component CSS/MyCart.css'
+import './Components/Component CSS/About.css'
+import './Components/Component CSS/MyCart.css'
+import './Components/Component CSS/SocialMedia.css'
+import './Components/Component CSS/SlideMenu.css'
 import './Components/Component CSS/ProductSlide.css'
 import './Components/Component CSS/HeroPage.css'
+import './Components/Component CSS/Login.css'
+import './Components/Component CSS/CheckoutForm.css'
+import './Components/Component CSS/Members.css'       
+import './Components/Component CSS/Registration.css'
+import './Components/Component CSS/PersonalInfo.css'
+import './App.css';
+import MembersOnly from './Components/Members'
+import Header from './Components/Header'
 import HeroPage from './Components/HeroPage';
-import './config'
 import LeadCapture from './Components/LeadCapture';
-import './Components/Component CSS/LeadCapture.css';
 import ProductSlide from './Components/ProductSlide';
 import {Packages} from './Components/Packages';
 import {FaChevronCircleLeft} from 'react-icons/fa';
@@ -25,29 +34,18 @@ import Slide from '@material-ui/core/Slide'
 import MyCart from './Components/MyCart'
 import ContactUs from './Components/ContactUs'
 import About from './Components/About'
-import './Components/Component CSS/About.css'
-import './Components/Component CSS/MyCart.css'
 import Scheduler from './Components/Scheduler'
 import SocialMedia from './Components/SocialMedia'
-import './Components/Component CSS/SocialMedia.css'
-import './Components/Component CSS/SlideMenu.css'
-import {Observer} from 'mobx-react'
 import StripeContainer from './Components/Stripe/StripeContainer'
 import LoginFormTest from './Components/LoginFormTest'
 import LoginForm from './Components/LoginFormTest'
 import inputField from './Components/SubmitButton'
-import './Components/Component CSS/Login.css'
-import './Components/Component CSS/CheckoutForm.css'
-import SubmitButton from './Components/SubmitButton'
-import MembersOnly from './Components/Members'
-import './Components/Component CSS/Members.css'       
-import './Components/Component CSS/Registration.css'
-import './Components/Component CSS/PersonalInfo.css'
+
 
 function Arrow(props) {
   const { direction, clickFunction} = props;
   const icon = direction === 'left' ? 
-  <FaChevronCircleLeft /> : <FaChevronCircleRight />
+  <button className="left" style={{textDecoration:'none'}}>L</button> : <button className="right" style={{textDecoration:'none'}}>R</button>
   return <div onClick={clickFunction}>{icon}</div>
 }
 

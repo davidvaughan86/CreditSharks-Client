@@ -15,6 +15,10 @@ export default function HeroPage () {
                 <div className="logo" max-with ='60%'>
                     <img src = {logo} width='100%' />
                     <h4>WE ATTACK BAD CREDIT</h4>
+                    <h5>Purpose</h5>
+                    <p>Purpose
+                    We believe everyone deserves good credit, but not everyone knows what good credit is. Here at Credit Sharks we will not only work with you on tackling inaccurate or unfair negative items listed on your credit report but we will also teach you how to maintain a healthy credit score. 
+                    </p>
                     <br/>
                     <Link to={'/leadcapture'} style={{ textDecoration: 'none' }}>
                         <span class="freedom" 
