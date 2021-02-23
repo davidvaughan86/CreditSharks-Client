@@ -1,5 +1,5 @@
 # Important Note:
-### this repo holds the contents of Credit Sharks client. Please refer to: https://github.com/davidvaughan86/CreditSharks-Capstone for Server/Client
+### this repo holds the contents of Credit Sharks client. Please refer to: <a href="https://github.com/davidvaughan86/CreditSharks-Capstone">Credit Sharks Capstone></a> for Server/Client
 
 ## Creator's Notes
 
